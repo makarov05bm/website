@@ -26,7 +26,7 @@ double absValue(double x)
 
 Cras ex velit, cursus et tincidunt sit amet, ultrices in sapien. Sed aliquam eu odio a egestas. Vivamus varius erat ut consequat mattis. Nunc dapibus lacus vel tortor dictum lobortis. Aliquam pellentesque vestibulum mauris, in malesuada libero euismod et. Vestibulum tincidunt pellentesque velit, in ultricies risus tempor id. Donec sed metus est. Suspendisse aliquet mi augue, nec viverra enim condimentum euismod. Praesent et urna molestie, molestie libero vel, consectetur lorem. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.
 
-![some picture]("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS2HlRTVUvt056Eq_GxCoMKtu2PqCKLejOHC7O6UwidUA&s").
+![some picture](https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS2HlRTVUvt056Eq_GxCoMKtu2PqCKLejOHC7O6UwidUA&s).
 
 Morbi vel lacinia nulla, sed tempus lacus. Sed posuere dapibus metus at imperdiet. Vivamus vel tellus eu leo sollicitudin consectetur quis a nisl. Donec vehicula mauris id tincidunt tincidunt. Vivamus vestibulum diam non ligula porta, dictum gravida velit commodo. Integer ut dolor laoreet, imperdiet mi at, finibus metus. In in dui sit amet metus pretium vestibulum. Vivamus in tortor efficitur, interdum libero eget, tristique ante. Nullam ornare, odio eget fringilla auctor, erat ex ultricies nisl, ut fringilla urna nibh at orci. Suspendisse eleifend vel ex ac porta. Nulla eleifend at nunc non ullamcorper. Sed quis mollis nibh. Nulla ultrices mauris magna, sit amet scelerisque odio tempus ac. Nam commodo fermentum ipsum, et facilisis magna vulputate id. 
 
