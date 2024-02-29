@@ -9,7 +9,7 @@ import { getFeaturedPosts } from "../lib/posts-util"
 export default function HomeScreen({ posts }) {
   return (
     <>
-      <Meta title="Makarov's Blog" description='My applciation security write-ups' />
+      <Meta title="Retro Games" description='My applciation security write-ups' />
       <Hero />
       <About />
       <Why />
