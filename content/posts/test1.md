@@ -10,8 +10,18 @@ isFeatured: true
 
 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent ornare ex nec venenatis suscipit. Etiam tincidunt, metus a commodo vestibulum, nisi arcu laoreet dolor, eget fringilla eros ipsum nec orci. In ut mollis purus. Aenean hendrerit augue eu orci luctus imperdiet. Etiam erat ante, ornare nec lobortis at, pretium nec leo. Donec at nibh faucibus, mollis mi a, porta sapien. Integer tincidunt nisl a tortor ornare, at gravida ex varius. Ut pulvinar condimentum elementum. Phasellus sit amet augue fringilla, pulvinar ipsum in, interdum arcu. In luctus lacus eu felis eleifend, vel pharetra risus porta. Praesent sem quam, venenatis in ante eget, consectetur dictum ex. Phasellus vitae erat et ante fringilla volutpat ac ut diam. Nulla lobortis mauris quis mauris lobortis, aliquet porta magna euismod. Vestibulum lacinia non nisi id pulvinar.
 
-```js
-console.log("log");
+```cpp
+double absValue(double x)
+{
+    if (x < 0)
+    {
+        return -x;
+    }
+    else if (x > 0)
+    {
+        return x;
+    }
+}
 ```
 
 Cras ex velit, cursus et tincidunt sit amet, ultrices in sapien. Sed aliquam eu odio a egestas. Vivamus varius erat ut consequat mattis. Nunc dapibus lacus vel tortor dictum lobortis. Aliquam pellentesque vestibulum mauris, in malesuada libero euismod et. Vestibulum tincidunt pellentesque velit, in ultricies risus tempor id. Donec sed metus est. Suspendisse aliquet mi augue, nec viverra enim condimentum euismod. Praesent et urna molestie, molestie libero vel, consectetur lorem. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.
