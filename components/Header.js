@@ -56,7 +56,7 @@ const Header = () => {
                                 <Link href='/posts'>Community</Link>
                             </li>
                             <li>
-                                <a href='/pp.txt'>Privacy Policy</a>
+                                <a href='https://sites.google.com/view/retromuse-privacy-policy/home' target="_blank">Privacy Policy</a>
                             </li>
                             <li className='btn' onClick={toggle}>
                                 Contact

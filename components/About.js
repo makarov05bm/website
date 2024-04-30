@@ -13,7 +13,7 @@ const About = () => {
         <div className="about-main-content">
           <span>Know More</span>
           <h1>about Retro Games</h1>
-          <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. At error laudantium eveniet maiores itaque rem suscipit molestiae esse, iste ab numquam consequatur hic. Sunt non perspiciatis, temporibus modi laboriosam ab dolorem alias quibusdam ipsa, rerum natus ex veniam labore nemo!</p>
+          <p>Discover RetroMuse, the vibrant fusion of innovation and nostalgia in gaming, proudly from Algeria. We&apos;re iconic, passionate creators dedicated to redefining gaming excellence. Join our journey to unite a robust gaming community and shape the future of interactive entertainment. RetroMuse – Boundless Creativity, Algerian Spirit.</p>
         </div>
         <div className="skill-set">
           <div className="inner-skill-set">

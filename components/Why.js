@@ -7,34 +7,34 @@ const Why = () => {
     return (
         <section className='why'>
             <h1 className="title">
-                Take action
+                Why Retro Muse
             </h1>
 
             <div className="container">
                 <div className="main-content">
                     <article>
                         <div className="icon">
-                            <RiTeamFill className='logo' />
+                            <SiFastapi className='logo' />
                         </div>
 
                         <div className="title">
-                            Full Support
+                            Artful
                         </div>
                         <p>
-                            Get quality products in short times
+                            Artistry in Entertainment, Redefined
                         </p>
                     </article>
 
                     <article>
                         <div className="icon">
-                            <SiFastapi className='logo' />
+                            <RiTeamFill className='logo' />
                         </div>
 
                         <div className="title">
-                            Fast Dilivery
+                            Passionate
                         </div>
                         <p>
-                            Get quality products in short times
+                            Passion fuels our creative excellence
                         </p>
                     </article>
 
@@ -44,10 +44,10 @@ const Why = () => {
                         </div>
 
                         <div className="title">
-                            Quality Code
+                            Iconic
                         </div>
                         <p>
-                            Get quality products in short times
+                            Striving for Iconic Excellence.
                         </p>
                     </article>
                 </div>

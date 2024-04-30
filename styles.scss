@@ -120,6 +120,27 @@ a {
     border-top: 1px solid $btn-gray;
     font-size: 0.9rem;
     background-color: $input-dark;
+
+    .socials {
+        display: flex;
+        place-items: center;
+        gap: 1rem;
+        width: fit-content;
+        margin: 0.6rem auto 0 auto;
+
+        a {
+            color: inherit;
+        }
+
+        .icon {
+            font-size: 1.2rem;
+            cursor: pointer;
+
+            &:hover {
+                color: $light-gray;
+            }
+        }
+    }
 }
 
 .btn {
@@ -183,6 +204,7 @@ a {
         text-align: center;
         position: relative;
         z-index: 100;
+        position: relative;
 
         &::before {
             position: absolute;
@@ -194,6 +216,35 @@ a {
             background-image: radial-gradient($bg-sec 2px, transparent 2px);
             background-size: 30px 30px;
             z-index: -1;
+        }
+
+        .games-icon {
+            position: absolute;
+            top: 0;
+            right: 0;
+            transform: rotate(30deg);
+            animation: moveUpDown 2s ease-in-out infinite alternate;
+
+            .icon {
+                width: 100%;
+                color: rgba($border-gray, 0.15);
+                font-size: 14rem;
+            }
+        }
+
+        .games-icon-2 {
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            transform: rotate(30deg);
+            animation: moveUpDown 2s ease-in-out infinite alternate;
+            animation-delay: 1s;
+
+            .icon {
+                width: 100%;
+                color: rgba($border-gray, 0.15);
+                font-size: 14rem;
+            }
         }
 
         .img {
@@ -834,7 +885,7 @@ a {
         width: 60%;
         display: grid;
         grid-template-columns: 2fr 2fr;
-        gap: 2.5rem;
+        gap: 2rem;
         align-items: center;
 
         .about-main-content {
@@ -1285,6 +1336,212 @@ a {
 
             p {
                 font-size: 1rem;
+            }
+        }
+    }
+}
+
+@keyframes moveUpDown {
+    0% {
+        transform: translateY(0) rotate(30deg);
+    }
+
+    100% {
+        transform: translateY(-50px) rotate(30deg);
+    }
+}
+
+.game-list {
+    background-color: $bg-sec;
+    padding: 5rem 0;
+
+    h1 {
+        font-size: 4.5rem;
+        margin-bottom: 3rem;
+        text-align: center;
+    }
+
+    .container {
+        width: 50%;
+        margin: 0 auto;
+        position: relative;
+
+        .games-icon {
+            position: absolute;
+            top: 0;
+            right: 0;
+            transform: rotate(30deg);
+            animation: moveUpDown 2s ease-in-out infinite alternate;
+
+            .icon {
+                width: 100%;
+                color: rgba($border-gray, 0.15);
+                font-size: 14rem;
+            }
+        }
+
+        .game {
+            border-radius: 8px;
+            background-color: rgba($bg-main, 0.6);
+            border: 1px solid rgba($border-gray, 0.5);
+            overflow: hidden;
+
+            &:not(:last-of-type) {
+                margin-bottom: 2.4rem;
+            }
+
+            ul {
+                list-style-type: none;
+            }
+
+            display: grid;
+            grid-template-columns: 1fr 2fr;
+
+            .swiper {
+                width: 100%;
+                height: 100%;
+
+
+                img {
+                    width: 100%;
+                    display: block;
+                    height: 100%;
+
+                    &::selection {
+                        background: none;
+                    }
+                }
+            }
+
+            .content {
+                padding: 1rem 2rem 1rem 2rem;
+
+                h2 {
+                    font-size: 2.6rem;
+                    color: $secondary-color;
+                }
+
+                p {
+                    color: $text-main;
+                    font-size: 1rem;
+                    margin-bottom: 1rem;
+                }
+
+                .game-icon {
+                    width: 120px;
+                    height: 120px;
+
+                    img {
+                        width: 100%;
+                        object-fit: contain;
+                    }
+                }
+
+                ul {
+                    display: grid;
+                    grid-template-columns: 1fr 1fr;
+                    margin-bottom: 1.5rem;
+
+                    li {
+                        b {
+                            color: rgba($light-gray, 0.8);
+                        }
+
+                        p {
+                            font-size: 0.9rem;
+                        }
+                    }
+                }
+
+                a {
+                    background-color: $secondary-color;
+                    padding: 0.4rem 1.4rem;
+                    border-radius: 2px;
+                    cursor: pointer;
+                    margin-top: 0.3rem;
+                    display: inline-block;
+                    color: purple;
+                    display: flex;
+                    width: fit-content;
+                    align-items: center;
+                    gap: 0.7rem;
+
+                    .icon {
+                        font-size: 1.3rem;
+                    }
+
+                    &:hover {
+                        color: $border-gray;
+                    }
+                }
+
+                .pp {
+                    background-color: transparent;
+                    color: $dark-gray;
+                    padding: 0;
+                    margin-top: 1.2rem;
+                    text-decoration: underline;
+
+                    &:hover {
+                        color: $light-gray;
+                    }
+                }
+            }
+        }
+    }
+}
+
+.team {
+    background-color: $bg-sec;
+    padding: 5rem 0;
+
+    h1 {
+        font-size: 4.5rem;
+        margin-bottom: 3rem;
+        text-align: center;
+        color: $secondary-color;
+    }
+
+    .container {
+        .main-content {
+            color: $light-gray;
+            display: grid;
+            grid-template-columns: 1fr 1fr 1fr;
+
+            article {
+                text-align: center;
+                display: grid;
+                place-items: center;
+            }
+
+            .member {
+                display: flex;
+                place-items: center;
+                width: 180px;
+                height: 180px;
+                margin-bottom: 0.8rem;
+
+                img {
+                    width: 100%;
+                    height: 100%;
+                    border-radius: 12px;
+                    object-fit: cover;
+                    display: block;
+                }
+            }
+
+            .link {
+                cursor: pointer;
+                color: inherit;
+
+                .icon {
+                    font-size: 1.8rem;
+                }
+            }
+
+            p {
+                color: $dark-gray !important;
+                margin-bottom: 0.6rem;
             }
         }
     }
