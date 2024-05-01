@@ -308,10 +308,17 @@ a {
 .posts-grid article a {
   color: #c9d1d9;
 }
-.posts-grid article img {
+.posts-grid article .img-container {
+  overflow: hidden;
+}
+.posts-grid article .img-container img {
   -o-object-fit: cover;
   object-fit: cover;
   height: 300px !important;
+  transition: transform 0.15s ease-in-out;
+}
+.posts-grid article .img-container img:hover {
+  transform: scale(1.15);
 }
 .posts-grid article .post-item-content {
   padding: 0.8rem 1rem;
@@ -1196,14 +1203,19 @@ a {
   width: 180px;
   height: 180px;
   margin-bottom: 0.8rem;
+  border-radius: 12px;
+  overflow: hidden;
 }
 .team .container .main-content .member img {
   width: 100%;
   height: 100%;
-  border-radius: 12px;
   -o-object-fit: cover;
      object-fit: cover;
   display: block;
+  transition: transform 0.15s ease-in-out;
+}
+.team .container .main-content .member img:hover {
+  transform: scale(1.15);
 }
 .team .container .main-content .link {
   cursor: pointer;

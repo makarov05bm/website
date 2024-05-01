@@ -354,10 +354,19 @@ a {
             color: $light-gray;
         }
 
-        img {
-            -o-object-fit: cover;
-            object-fit: cover;
-            height: 300px !important;
+        .img-container {
+            overflow: hidden;
+
+            img {
+                -o-object-fit: cover;
+                object-fit: cover;
+                height: 300px !important;
+                transition: transform 0.15s ease-in-out;
+
+                &:hover {
+                    transform: scale(1.15);
+                }
+            }
         }
 
         .post-item-content {
@@ -1520,13 +1529,19 @@ a {
                 width: 180px;
                 height: 180px;
                 margin-bottom: 0.8rem;
+                border-radius: 12px;
+                overflow: hidden;
 
                 img {
                     width: 100%;
                     height: 100%;
-                    border-radius: 12px;
                     object-fit: cover;
                     display: block;
+                    transition: transform 0.15s ease-in-out;
+
+                    &:hover {
+                        transform: scale(1.15);
+                    }
                 }
             }
 

@@ -44,8 +44,8 @@ const About = () => {
                     <FaAppStore className='logo' />
                   </div>
                   <div className="text">
-                    <p className="title">Mobile Development</p>
-                    <span>Shops, productivity, communication...</span>
+                    <p className="title">Data Analysis</p>
+                    <span>Basic, advanced analytics</span>
                   </div>
                 </li>
               </ul>

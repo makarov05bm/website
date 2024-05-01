@@ -53,7 +53,7 @@ const Header = () => {
                         </h2>
                         <ul>
                             <li>
-                                <Link href='/posts'>Community</Link>
+                                <Link href='/posts'>Blogs</Link>
                             </li>
                             <li>
                                 <a href='https://sites.google.com/view/retromuse-privacy-policy/home' target="_blank">Privacy Policy</a>

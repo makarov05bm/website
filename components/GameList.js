@@ -16,14 +16,14 @@ const GameList = () => {
                 <div className="game">
                     <div className="swiper">
                         <SwiperComponent>
+                            <SwiperSlide><img src="/images/wii8.png" alt="" /></SwiperSlide>
+                            <SwiperSlide><img src="/images/wii5.png" alt="" /></SwiperSlide>
+                            <SwiperSlide><img src="/images/wii7.png" alt="" /></SwiperSlide>
                             <SwiperSlide><img src="/images/wii1.png" alt="" /></SwiperSlide>
                             <SwiperSlide><img src="/images/wii2.png" alt="" /></SwiperSlide>
                             <SwiperSlide><img src="/images/wii3.png" alt="" /></SwiperSlide>
                             <SwiperSlide><img src="/images/wii4.png" alt="" /></SwiperSlide>
-                            <SwiperSlide><img src="/images/wii5.png" alt="" /></SwiperSlide>
                             <SwiperSlide><img src="/images/wii6.png" alt="" /></SwiperSlide>
-                            <SwiperSlide><img src="/images/wii7.png" alt="" /></SwiperSlide>
-                            <SwiperSlide><img src="/images/wii8.png" alt="" /></SwiperSlide>
                         </SwiperComponent>
 
                     </div>
@@ -32,19 +32,19 @@ const GameList = () => {
                             <img src="/images/wii-icon.png" alt="" />
                         </div> */}
                         <h2>What Is It?</h2>
-                        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Repellat illo id consequuntur neque obcaecati veniam?</p>
+                        <p>Guess hidden objects. Unlock +100 wallpapers. Chill and Expand your vocabulary!</p>
                         <ul>
                             <li>
                                 <b>Release Data:</b>
-                                <p>10/03/2024</p>
+                                <p>Coming soon</p>
                             </li>
                             <li>
-                                <b>Target OS:</b>
+                                <b>Platform:</b>
                                 <p>Android</p>
                             </li>
                             <li>
                                 <b>In-App Purchaches:</b>
-                                <p>Yes</p>
+                                <p>No</p>
                             </li>
                             <li>
                                 <b>Game Category:</b>
@@ -52,7 +52,7 @@ const GameList = () => {
                             </li>
                             <li>
                                 <b>Status:</b>
-                                <p>Released</p>
+                                <p>Not Released</p>
                             </li>
                             <li>
                                 <b>Size:</b>

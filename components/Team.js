@@ -3,6 +3,8 @@ import { SiFastapi } from "react-icons/si";
 import { RiTeamFill } from "react-icons/ri";
 import { SiUnity } from "react-icons/si";
 import { FaLinkedin } from "react-icons/fa";
+import { FaSpotify } from "react-icons/fa";
+import { FaGlobeAfrica } from "react-icons/fa";
 
 const Team = () => {
     return (
@@ -31,7 +33,7 @@ const Team = () => {
 
                     <article>
                         <div className="member">
-                            <img src="images/ouu.jpeg" alt="" />
+                            <img src="images/ouu.png" alt="" />
                         </div>
 
                         <div className="title">
@@ -41,7 +43,7 @@ const Team = () => {
                             Full Stack Web Developer
                         </p>
                         <a className="link">
-                            <FaLinkedin className='icon linkedin' />
+                            <FaGlobeAfrica className='icon linkedin' />
                         </a>
                     </article>
 
@@ -54,10 +56,10 @@ const Team = () => {
                             Hisenburgg
                         </div>
                         <p>
-                            Composer, Freelancer
+                            Audio Producer, Freelancer
                         </p>
                         <a className="link">
-                            <FaLinkedin className='icon linkedin' />
+                            <FaSpotify className='icon linkedin' />
                         </a>
                     </article>
                 </div>
