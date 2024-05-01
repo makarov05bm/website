@@ -47,7 +47,8 @@ const Header = () => {
                         <h2>
                             <Link legacyBehavior href='/'>
                                 <a>
-                                    <IoLogoOctocat />
+                                    {/* <IoLogoOctocat /> */}
+                                    Retro Muse
                                 </a>
                             </Link>
                         </h2>

@@ -59,7 +59,7 @@ const GameList = () => {
                                 <p>70MB</p>
                             </li>
                         </ul>
-                        <Link href='/'><IoLogoGooglePlaystore className='icon' /> See on Play Store</Link>
+                        <Link href='https://play.google.com/store/apps/details?id=com.retromuse.whatisit'><IoLogoGooglePlaystore className='icon' /> See on Play Store</Link>
                         <a href="https://sites.google.com/view/retromuse-privacy-policy/home" className='pp'>Privacy Policy</a>
                     </div>
                 </div>
