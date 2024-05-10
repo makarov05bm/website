@@ -3,6 +3,13 @@
 @import url('https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Nunito+Sans:ital,opsz,wght@0,6..12,200..1000;1,6..12,200..1000&family=Press+Start+2P&display=swap');
 
+@font-face {
+    font-family: WARRIOR;
+    font-weight: bold;
+    font-style: normal;
+    src: url("/fonts/Space Quest Italic.ttf");
+}
+
 @keyframes lightSpeedIn {
     0% {
         transform: translateX(-100%) skewX(-30deg);
@@ -41,8 +48,9 @@
 
 h1 {
     font-family: 'Nunito Sans', 'sans-serif';
-    font-weight: 1000;
     font-style: italic;
+    font-weight: 1000;
+    font-size: 6rem;
 }
 
 h2 {
@@ -248,7 +256,7 @@ a {
     place-items: center;
 
     .container {
-        width: 40%;
+        width: 45%;
         display: grid;
         place-items: center;
         text-align: center;
@@ -340,15 +348,14 @@ a {
         }
 
         h1 {
-            font-size: 3.8rem;
+            font-family: 'WARRIOR';
+            font-size: 3rem !important;
+            font-style: normal;
             animation-delay: 0.7s;
             animation-duration: 0.5s;
             animation-fill-mode: both;
             animation-name: lightSpeedIn;
             animation-timing-function: ease-out;
-            background: -webkit-linear-gradient(left, #eee, #333 110%);
-            -webkit-background-clip: text;
-            -webkit-text-fill-color: transparent;
         }
 
         p {
@@ -360,6 +367,7 @@ a {
             animation-fill-mode: both;
             animation-name: imgShowUp;
             animation-timing-function: ease-out;
+            font-style: italic;
         }
     }
 }
@@ -382,7 +390,7 @@ a {
             display: flex;
             align-items: center;
             justify-content: space-between;
-            padding: 0.9rem 0;
+            padding: 0.6rem 0;
 
             h2 {
                 font-size: 1.7rem;
@@ -508,7 +516,7 @@ a {
         }
 
         h1 {
-            font-size: 2.6rem;
+            font-size: 3.4rem;
             margin-bottom: 0.8rem;
         }
     }
@@ -765,8 +773,11 @@ a {
     // }
 
     img {
-        width: 100%;
+        width: 75%;
+        display: block;
+        margin: 0 auto;
         border-radius: 4px;
+        margin: 1.4rem auto 1.4rem auto;
     }
 }
 
@@ -1505,7 +1516,7 @@ a {
             }
 
             display: grid;
-            grid-template-columns: 1fr 2fr;
+            grid-template-columns: 1fr 2.5fr;
 
             .swiper {
                 width: 100%;
@@ -1513,7 +1524,7 @@ a {
 
 
                 img {
-                    width: 90%;
+                    width: 100%;
                     display: block;
                     height: 100%;
                     object-fit: cover;
@@ -1615,6 +1626,20 @@ a {
 
     .container {
         width: 60%;
+        position: relative;
+        z-index: 1000;
+
+        &::before {
+            position: absolute;
+            content: '';
+            top: 20%;
+            left: -10%;
+            width: 120%;
+            height: 80%;
+            background-image: radial-gradient($border-gray 2px, transparent 2px);
+            background-size: 30px 30px;
+            z-index: -1;
+        }
 
         .main-content {
             color: $light-gray;
@@ -1630,17 +1655,40 @@ a {
                 border-radius: 13px;
 
                 &.side {
-                    transform: translateY(15%);
+                    transform: translateY(12%);
+                }
+
+                &:hover {
+                    backdrop-filter: blur(14px);
                 }
 
                 article {
                     text-align: center;
                     display: grid;
                     place-items: center;
-                    background-color: rgba($bg-main, 0.90);
-                    backdrop-filter: blur(10px);
+                    background-color: rgba($bg-main, 0.86);
+                    backdrop-filter: blur(12px) opacity(0);
                     border-radius: 13px;
                     padding: 1.2rem;
+                    transition: backdrop-filter 0.2s ease-in-out;
+
+                    p {
+                        transition: color 0.16s ease-in;
+                    }
+
+                    &:hover {
+                        backdrop-filter: blur(16px) opacity(1);
+
+                        .member {
+                            img {
+                                transform: scale(1.15);
+                            }
+                        }
+
+                        p {
+                            color: $light-gray !important;
+                        }
+                    }
 
                     .title {
                         font-size: 1.5rem;
@@ -1673,10 +1721,6 @@ a {
                     object-fit: cover;
                     display: block;
                     transition: transform 0.15s ease-in-out;
-
-                    &:hover {
-                        transform: scale(1.15);
-                    }
                 }
             }
 
@@ -1733,6 +1777,7 @@ a {
     padding: 4rem 0;
 
     .container {
+
         h1 {
             font-family: 'Nunito Sans', 'sans-serif';
             font-weight: 1000;

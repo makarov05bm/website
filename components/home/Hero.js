@@ -5,7 +5,7 @@ import { RiGameLine } from "react-icons/ri";
 
 const Hero = () => {
   return (
-    <section className='hero'>
+    <section className='hero' id='home'>
       <div className="container">
         <div className="games-icon">
           <IoGameController className='icon' />

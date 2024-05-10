@@ -63,7 +63,7 @@ const Contact = () => {
 
     return (
         <>
-            <section className='contact'>
+            <section className='contact' id='contact'>
                 <div className='container'>
                     <h1>Send us a message</h1>
                     <form ref={form} onSubmit={sendMessageHandler}>

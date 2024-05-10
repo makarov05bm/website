@@ -7,7 +7,7 @@ const Featured = ({ posts }) => {
   return (
     <section className='featured'>
       <div className="container">
-        <h1>Featured Posts</h1>
+        <h1>Discover Featured Posts</h1>
         <PostGrid>
           {posts.slice(0, 4).map((post, index) => {
             return (

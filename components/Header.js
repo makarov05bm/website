@@ -3,6 +3,7 @@ import Link from 'next/link'
 import { IoLogoOctocat } from 'react-icons/io'
 import ContactScreen from '../pages/contact'
 import BlogContext from '../store/contactContext'
+import { Link as LocalLink, animateScroll as scroll } from "react-scroll";
 
 const Header = () => {
     const blogContext = useContext(BlogContext)
@@ -45,19 +46,17 @@ const Header = () => {
                 <div className="container">
                     <nav>
                         <h2>
-                            <Link legacyBehavior href='/'>
-                                <a>
-                                    {/* <IoLogoOctocat /> */}
-                                    Retro Muse
-                                </a>
+                            <Link href='/'>
+                                {/* <IoLogoOctocat /> */}
+                                Retro Muse
                             </Link>
                         </h2>
                         <ul>
                             <li>
-                                <Link href='/posts'>About</Link>
+                                <LocalLink smooth={true} to='about'>About</LocalLink>
                             </li>
                             <li>
-                                <Link href='/posts'>Games</Link>
+                                <LocalLink smooth={true} to='games'>Games</LocalLink>
                             </li>
                             <li>
                                 <Link href='/posts'>Blogs</Link>
@@ -66,7 +65,7 @@ const Header = () => {
                                 <a href='https://sites.google.com/view/retromuse-privacy-policy/home' target="_blank">Privacy Policy</a>
                             </li>
                             <li>
-                                <Link href='/posts'>Team</Link>
+                                <LocalLink smooth={true} to='team'>Team</LocalLink>
                             </li>
                             <li className='btn' onClick={toggle}>
                                 Contact

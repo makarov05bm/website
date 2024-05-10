@@ -8,7 +8,7 @@ const About = () => {
   const age = Math.floor((new Date() - new Date('october 05 2002')) / 31536000000)
 
   return (
-    <section className='about'>
+    <section className='about' id='about'>
       <div className="container">
         <div className="about-main-content">
           <span>Know More</span>

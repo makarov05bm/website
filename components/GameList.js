@@ -13,7 +13,7 @@ import { Navigation, Autoplay } from 'swiper/modules';
 
 const GameList = () => {
     return (
-        <section className='game-list'>
+        <section className='game-list' id='games'>
             <h1>Our New Featured Game</h1>
             <div className="container">
                 <div className="games-icon">
@@ -27,6 +27,7 @@ const GameList = () => {
                             delay: 2500,
                             disableOnInteraction: false
                         }}
+                            spaceBetween={20}
                             modules={[Pagination, Navigation, Autoplay]}
                             className="mySwiper">
                             <SwiperSlide><img src="/images/wii8.png" alt="" /></SwiperSlide>

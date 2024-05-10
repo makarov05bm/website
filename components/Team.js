@@ -8,7 +8,7 @@ import { FaGlobeAfrica } from "react-icons/fa";
 
 const Team = () => {
     return (
-        <section className='team why'>
+        <section className='team why' id='team'>
             <h1 className="title">
                 Retro Muse Team
             </h1>
