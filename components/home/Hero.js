@@ -17,7 +17,7 @@ const Hero = () => {
           <Image src='/images/main.png' width={300} height={300} placeholder='blur' blurDataURL='/images/tree.jpg' alt='My photo' />
         </div>
         <div className="hero-content">
-          <h1>Retro Muse Studio</h1>
+          <h1>Retro Muse Studios</h1>
           <p>Where Art and Retro meet Playfully</p>
         </div>
       </div>

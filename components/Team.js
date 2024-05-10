@@ -15,53 +15,59 @@ const Team = () => {
 
             <div className="container">
                 <div className="main-content">
-                    <article>
-                        <div className="member">
-                            <img src="images/yus.png" alt="" />
-                        </div>
+                    <div className="outer side">
+                        <article>
+                            <div className="member">
+                                <img src="images/ouu.png" alt="" />
+                            </div>
 
-                        <div className="title">
-                            Youcef Belkhiri
-                        </div>
-                        <p>
-                            Founder, Lead Game Design & Development
-                        </p>
-                        <a className="link" href='https://www.linkedin.com/in/youcef-belkhiri-80a8a6219'>
-                            <FaLinkedin className='icon linkedin' />
-                        </a>
-                    </article>
+                            <div className="title">
+                                Oussama .M
+                            </div>
+                            <p>
+                                Full Stack Web Developer
+                            </p>
+                            <a className="link">
+                                <FaGlobeAfrica className='icon linkedin' />
+                            </a>
+                        </article>
+                    </div>
 
-                    <article>
-                        <div className="member">
-                            <img src="images/ouu.png" alt="" />
-                        </div>
+                    <div className="outer">
+                        <article>
+                            <div className="member">
+                                <img src="images/yus.png" alt="" />
+                            </div>
 
-                        <div className="title">
-                            Oussama Messaoudi
-                        </div>
-                        <p>
-                            Full Stack Web Developer
-                        </p>
-                        <a className="link">
-                            <FaGlobeAfrica className='icon linkedin' />
-                        </a>
-                    </article>
+                            <div className="title">
+                                Youcef Belkhiri
+                            </div>
+                            <p>
+                                Founder Lead Game Design & Development
+                            </p>
+                            <a className="link" href='https://www.linkedin.com/in/youcef-belkhiri-80a8a6219'>
+                                <FaLinkedin className='icon linkedin' />
+                            </a>
+                        </article>
+                    </div>
 
-                    <article>
-                        <div className="member">
-                            <img src="images/heis.jpg" alt="" />
-                        </div>
+                    <div className="outer side">
+                        <article>
+                            <div className="member">
+                                <img src="images/heis.jpg" alt="" />
+                            </div>
 
-                        <div className="title">
-                            Hisenburgg
-                        </div>
-                        <p>
-                            Audio Producer, Freelancer
-                        </p>
-                        <a className="link">
-                            <FaSpotify className='icon linkedin' />
-                        </a>
-                    </article>
+                            <div className="title">
+                                Hisenburgg
+                            </div>
+                            <p>
+                                Audio Producer, Freelancer
+                            </p>
+                            <a className="link">
+                                <FaSpotify className='icon linkedin' />
+                            </a>
+                        </article>
+                    </div>
                 </div>
             </div>
         </section>

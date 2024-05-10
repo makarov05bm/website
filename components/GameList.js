@@ -4,6 +4,12 @@ import SwiperComponent from './SwiperComponent';
 import { SwiperSlide } from 'swiper/react';
 import { SiGamejolt } from "react-icons/si";
 import { IoLogoGooglePlaystore } from "react-icons/io5";
+import { Swiper } from 'swiper/react';
+import 'swiper/css';
+import 'swiper/css/pagination';
+import { Pagination } from 'swiper/modules';
+import 'swiper/css/navigation';
+import { Navigation, Autoplay } from 'swiper/modules';
 
 const GameList = () => {
     return (
@@ -15,7 +21,14 @@ const GameList = () => {
                 </div>
                 <div className="game">
                     <div className="swiper">
-                        <SwiperComponent>
+                        <Swiper pagination={{
+                            type: 'progressbar',
+                        }} autoplay={{
+                            delay: 2500,
+                            disableOnInteraction: false
+                        }}
+                            modules={[Pagination, Navigation, Autoplay]}
+                            className="mySwiper">
                             <SwiperSlide><img src="/images/wii8.png" alt="" /></SwiperSlide>
                             <SwiperSlide><img src="/images/wii5.png" alt="" /></SwiperSlide>
                             <SwiperSlide><img src="/images/wii7.png" alt="" /></SwiperSlide>
@@ -24,7 +37,7 @@ const GameList = () => {
                             <SwiperSlide><img src="/images/wii3.png" alt="" /></SwiperSlide>
                             <SwiperSlide><img src="/images/wii4.png" alt="" /></SwiperSlide>
                             <SwiperSlide><img src="/images/wii6.png" alt="" /></SwiperSlide>
-                        </SwiperComponent>
+                        </Swiper>
 
                     </div>
                     <div className="content">
@@ -44,7 +57,7 @@ const GameList = () => {
                             </li>
                             <li>
                                 <b>In-App Purchaches:</b>
-                                <p>No</p>
+                                <p>Yes</p>
                             </li>
                             <li>
                                 <b>Game Category:</b>

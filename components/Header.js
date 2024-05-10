@@ -54,10 +54,19 @@ const Header = () => {
                         </h2>
                         <ul>
                             <li>
+                                <Link href='/posts'>About</Link>
+                            </li>
+                            <li>
+                                <Link href='/posts'>Games</Link>
+                            </li>
+                            <li>
                                 <Link href='/posts'>Blogs</Link>
                             </li>
                             <li>
                                 <a href='https://sites.google.com/view/retromuse-privacy-policy/home' target="_blank">Privacy Policy</a>
+                            </li>
+                            <li>
+                                <Link href='/posts'>Team</Link>
                             </li>
                             <li className='btn' onClick={toggle}>
                                 Contact
