@@ -83,7 +83,7 @@ const ContactScreen = () => {
               <textarea id="message" name="message" required placeholder='Enter your message' value={message} onChange={(e) => setMessage(e.target.value)}></textarea>
             </div>
             <div className="cta">
-              <button type='submit' className='btn'>Send</button>
+              <button type='submit' className='btn'>Send!</button>
             </div>
           </form>
           <span className='exit' onClick={toggle}>
