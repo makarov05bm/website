@@ -10,73 +10,48 @@ import 'swiper/css/pagination';
 import { Pagination } from 'swiper/modules';
 import 'swiper/css/navigation';
 import { Navigation, Autoplay } from 'swiper/modules';
+import { IoPieChartSharp } from "react-icons/io5";
+import { IoColorPalette } from "react-icons/io5";
+import { IoLogoGameControllerB } from "react-icons/io";
+import { FaQuoteLeft } from "react-icons/fa";
+import { IoMdBrowsers } from "react-icons/io";
 
 const GameList = () => {
     return (
-        <section className='game-list' id='games'>
-            <h1>Our New Featured Game</h1>
+        <section className='last-review'>
             <div className="container">
-                <div className="games-icon">
-                    <SiGamejolt className='icon' />
-                </div>
-                <div className="game">
-                    <div className="swiper">
-                        <Swiper pagination={{
-                            type: 'progressbar',
-                        }} autoplay={{
-                            delay: 2500,
-                            disableOnInteraction: false
-                        }}
-                            spaceBetween={20}
-                            modules={[Pagination, Navigation, Autoplay]}
-                            className="mySwiper">
-                            <SwiperSlide><img src="/images/wii8.png" alt="" /></SwiperSlide>
-                            <SwiperSlide><img src="/images/wii5.png" alt="" /></SwiperSlide>
-                            <SwiperSlide><img src="/images/wii7.png" alt="" /></SwiperSlide>
-                            <SwiperSlide><img src="/images/wii1.png" alt="" /></SwiperSlide>
-                            <SwiperSlide><img src="/images/wii2.png" alt="" /></SwiperSlide>
-                            <SwiperSlide><img src="/images/wii3.png" alt="" /></SwiperSlide>
-                            <SwiperSlide><img src="/images/wii4.png" alt="" /></SwiperSlide>
-                            <SwiperSlide><img src="/images/wii6.png" alt="" /></SwiperSlide>
-                        </Swiper>
+                <div className="review-main">
+                    <div className="title">
+                        Last Client Review
+                    </div>
 
-                    </div>
-                    <div className="content">
-                        {/* <div className="game-icon">
-                            <img src="/images/wii-icon.png" alt="" />
-                        </div> */}
-                        <h2>What Is It?</h2>
-                        <p>Guess hidden objects. Unlock +100 wallpapers. Chill and Expand your vocabulary!</p>
-                        <ul>
-                            <li>
-                                <b>Release Data:</b>
-                                <p>Coming soon</p>
-                            </li>
-                            <li>
-                                <b>Platform:</b>
-                                <p>Android</p>
-                            </li>
-                            <li>
-                                <b>In-App Purchaches:</b>
-                                <p>Yes</p>
-                            </li>
-                            <li>
-                                <b>Game Category:</b>
-                                <p>Puzzles</p>
-                            </li>
-                            <li>
-                                <b>Status:</b>
-                                <p>Not Released</p>
-                            </li>
-                            <li>
-                                <b>Size:</b>
-                                <p>70MB</p>
-                            </li>
-                        </ul>
-                        <Link href='https://play.google.com/store/apps/details?id=com.retromuse.whatisit'><IoLogoGooglePlaystore className='icon' /> See on Play Store</Link>
-                        <a href="https://sites.google.com/view/retromuse-privacy-policy/home" className='pp'>Privacy Policy</a>
+                    <hr className="line"></hr>
+
+                    <div className="review">
+                        <div className="title">
+                            Lunatic Studios
+                        </div>
+
+                        <div className="pub">
+                            Game publisher
+                        </div>
+
+                        <div className="icon">
+                            <FaQuoteLeft className='ic' />
+                        </div>
+
+                        <div className="text">
+                            RetroMuse Studios developed a game that blew us away. Their customer service is just as fantastic as the game development itself.<br></br><br></br>
+                            Highly recommended.
+                        </div>
+
+                        <div className="img">
+                            <img src="/images/pub.png" alt="" />
+                        </div>
                     </div>
                 </div>
+
+                <Link href='/services' className="btn-yel">See Offers</Link>
             </div>
         </section>
     )

@@ -1,55 +1,61 @@
 import React from 'react'
-import Image from 'next/image'
-import { IoGameControllerOutline } from "react-icons/io5";
-import { IoGlobeOutline } from "react-icons/io5";
-import { FaAppStore } from "react-icons/fa";
+import Link from 'next/link';
+import { FaPencilRuler } from "react-icons/fa";
+import { FaBrain } from "react-icons/fa";
+import { GiFist } from "react-icons/gi";
 
 const About = () => {
-  const age = Math.floor((new Date() - new Date('october 05 2002')) / 31536000000)
-
   return (
     <section className='about' id='about'>
       <div className="container">
         <div className="about-main-content">
-          <span>Know More</span>
-          <h1>about Retro Games</h1>
-          <p>Discover RetroMuse, the vibrant fusion of innovation and nostalgia in gaming, proudly from Algeria. We&apos;re iconic, passionate creators dedicated to redefining gaming excellence. Join our journey to unite a robust gaming community and shape the future of interactive entertainment. RetroMuse – Boundless Creativity, Algerian Spirit.</p>
+          <h1>About us</h1>
+          <hr className="line" />
+          <p>Discover RetroMuse, the vibrant fusion of innovation and nostalgia in gaming, proudly from Algeria 🇩🇿<br></br><br></br>
+            We're iconic, passionate creators dedicated to redefining gaming excellence.<br></br><br></br><br></br>
+
+            <b>Join our journey to unite a robust gaming community and shape the future of interactive entertainment !</b><br></br>
+            RetroMuse – Boundless Creativity, Algerian Spirit.</p>
+
+          <Link href='https://discord.gg/TefyyAsHux'>
+            <img src="/images/discord_btn.png" alt="" /></Link>
         </div>
-        <div className="skill-set">
-          <div className="inner-skill-set">
-            <h2>Diverse IT services</h2>
-            <span>By top-tier developers</span>
-            <article>
-              <ul>
-                <li>
-                  <div className="icon">
-                    <IoGameControllerOutline className='logo' />
-                  </div>
-                  <div className="text">
-                    <p className="title">Game Development</p>
-                    <span>Indie, 3D, multiplayer...</span>
-                  </div>
-                </li>
-                <li>
-                  <div className="icon">
-                    <IoGlobeOutline className='logo' />
-                  </div>
-                  <div className="text">
-                    <p className="title">Web Development</p>
-                    <span>E-commerce, managment, landing pages...</span>
-                  </div>
-                </li>
-                <li>
-                  <div className="icon">
-                    <FaAppStore className='logo' />
-                  </div>
-                  <div className="text">
-                    <p className="title">Data Analysis</p>
-                    <span>Basic, advanced analytics</span>
-                  </div>
-                </li>
-              </ul>
-            </article>
+
+        <div className="chart">
+          <h1>Our Values</h1>
+          <hr className="line" />
+          <div className="items">
+            <div className="two">
+              <div className="li"></div>
+              <div className="pink-li"></div>
+              <div className="blue-li"></div>
+              <div className="item">
+                <div className="icon pen">
+                  <FaPencilRuler />
+                </div>
+
+                <div className="title">Artful</div>
+                <p>Redefining artistry in<br></br> entertainment</p>
+              </div>
+
+              <div className="item">
+                <div className="icon idea">
+                  <FaBrain />
+                </div>
+
+                <div className="title">Iconic</div>
+                <p>Striving for iconic status<br></br> with every project</p>
+              </div>
+            </div>
+
+            <div className="item one">
+              <div className="icon fist">
+                <GiFist />
+              </div>
+
+              <div className="title">Passionate</div>
+              <p>Passion fuels our creative<br></br> excellence</p>
+            </div>
           </div>
         </div>
       </div>

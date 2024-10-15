@@ -4,70 +4,143 @@ import { RiTeamFill } from "react-icons/ri";
 import { SiUnity } from "react-icons/si";
 import { FaLinkedin } from "react-icons/fa";
 import { FaSpotify } from "react-icons/fa";
+import { FaFacebookSquare } from "react-icons/fa";
 import { FaGlobeAfrica } from "react-icons/fa";
+import Link from 'next/link';
+import { IoLogoLinkedin } from "react-icons/io5";
+import { FaSquareXTwitter } from "react-icons/";
 
 const Team = () => {
     return (
         <section className='team why' id='team'>
             <h1 className="title">
-                Retro Muse Team
+                Meet the RetroMusers
             </h1>
+
+            <hr className="line" />
+
+            <p className='first'>Developers? Artists?... <span className="green">RetroMusers</span> ✅</p>
 
             <div className="container">
                 <div className="main-content">
-                    <div className="outer side">
+                    <div className="sider">
                         <article>
-                            <div className="member">
-                                <img src="images/ouu.png" alt="" />
-                            </div>
+                            <header>
+                                <div className="member">
+                                    <img src="images/p1.png" alt="" />
+
+                                    <div className="links">
+                                        <span>See more</span>
+
+                                        <div className="icons">
+                                            <Link href='/'><FaLinkedin className='ic' /></Link>
+                                            <Link href='/'><FaFacebookSquare className='ic' /></Link>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <p>
+                                    Data Analyst
+                                </p>
+                            </header>
 
                             <div className="title">
-                                Oussama .M
+                                Karima Benzahra
                             </div>
-                            <p>
-                                Full Stack Web Developer
-                            </p>
-                            <a className="link">
-                                <FaGlobeAfrica className='icon linkedin' />
-                            </a>
                         </article>
                     </div>
 
-                    <div className="outer">
+                    <div className="double">
                         <article>
-                            <div className="member">
-                                <img src="images/yus.png" alt="" />
-                            </div>
+                            <header>
+                                <div className="member">
+                                    <img src="images/p2.png" alt="" />
+
+                                    <div className="links">
+                                        <span>See more</span>
+
+                                        <div className="icons">
+                                            <Link href='/'><FaLinkedin className='ic' /></Link>
+                                            <Link href='/'><FaFacebookSquare className='ic' /></Link>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <p>
+                                    Founder<br></br>
+                                    Lead Game Design & Development
+                                </p>
+                            </header>
 
                             <div className="title">
                                 Youcef Belkhiri
                             </div>
-                            <p>
-                                Founder Lead Game Design & Development
-                            </p>
-                            <a className="link" href='https://www.linkedin.com/in/youcef-belkhiri-80a8a6219'>
-                                <FaLinkedin className='icon linkedin' />
-                            </a>
                         </article>
-                    </div>
 
-                    <div className="outer side">
                         <article>
-                            <div className="member">
-                                <img src="images/heis.jpg" alt="" />
-                            </div>
+                            <header>
+                                <div className="member">
+                                    <img src="images/p4.png" alt="" />
+
+                                    <div className="links">
+                                        <span>See more</span>
+
+                                        <div className="icons">
+                                            <Link href='/'><FaLinkedin className='ic' /></Link>
+                                            <Link href='/'><FaFacebookSquare className='ic' /></Link>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <p>
+                                    Audio Producer<br></br>
+                                    Freelancer
+                                </p>
+                            </header>
 
                             <div className="title">
                                 Hisenburgg
                             </div>
-                            <p>
-                                Audio Producer, Freelancer
-                            </p>
-                            <a className="link">
-                                <FaSpotify className='icon linkedin' />
-                            </a>
                         </article>
                     </div>
+
+                    <div className="sider">
+                        <article>
+                            <header>
+                                <div className="member">
+                                    <img src="images/mark.png" alt="" />
+
+                                    <div className="links">
+                                        <span>See more</span>
+
+                                        <div className="icons">
+                                            <Link href='/'><FaLinkedin className='ic' /></Link>
+                                            <Link href='/'><FaFacebookSquare className='ic' /></Link>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <p>
+                                    Digital Artist
+                                </p>
+                            </header>
+
+                            <div className="title">
+                                G.mARK
+                            </div>
+                        </article>
+                    </div>
+                </div>
+
+                <div className="kofi">
+                    <h3>
+                        Love our Work?
+                    </h3>
+
+                    <p>Help fuel our creativity!<br></br> Buy the team a cup of coffee to keep us energized and crafting the games you love</p>
+
+                    <Link href='https://ko-fi.com/retromusestudio'>
+                        <img src="/images/kofi.png" alt="" /></Link>
                 </div>
             </div>
         </section>

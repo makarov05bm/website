@@ -29,17 +29,17 @@ const Layout = ({ children }) => {
 
   return (
     <>
-        <Header />
-        <main>
-            {children}
-        </main>
-        {active && (
-          <div onClick={handleScroll}>
-            <UpArrow />
-          </div>
-        )}
-        {blogContext.notification && <Notification {...blogContext.notification} />}
-        {/* <Footer /> */}
+      <Header />
+      <main>
+        {children}
+      </main>
+      {active && (
+        <div onClick={handleScroll}>
+          <UpArrow />
+        </div>
+      )}
+      {blogContext.notification && <Notification {...blogContext.notification} />}
+      {/* <Footer /> */}
     </>
   )
 }

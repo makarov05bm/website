@@ -47,28 +47,32 @@ const Header = () => {
                     <nav>
                         <h2>
                             <Link href='/'>
-                                {/* <IoLogoOctocat /> */}
-                                Retro Muse
+                                <img src="/images/header.png" alt="" />
+                                <span>RETRO MUSE STUDIOS</span>
                             </Link>
                         </h2>
                         <ul>
                             <li>
-                                <LocalLink smooth={true} to='about'>About</LocalLink>
+                                <Link href='/#about'>About</Link>
                             </li>
                             <li>
-                                <LocalLink smooth={true} to='games'>Games</LocalLink>
+                                <div className="special">+ Special Offers</div>
+                                <Link href='/services'>Services</Link>
                             </li>
                             <li>
-                                <Link href='/posts'>Blogs</Link>
+                                <Link href='/#games'>Games</Link>
                             </li>
                             <li>
+                                <Link href='/#blogs'>Blogs</Link>
+                            </li>
+                            {/* <li>
                                 <a href='https://sites.google.com/view/retromuse-privacy-policy/home' target="_blank">Privacy Policy</a>
-                            </li>
+                            </li> */}
                             <li>
-                                <LocalLink smooth={true} to='team'>Team</LocalLink>
+                                <Link href='/#team'>Team</Link>
                             </li>
-                            <li className='btn' onClick={toggle}>
-                                Contact
+                            <li className='btn'>
+                                <Link href='/#join'>JOIN US</Link>
                             </li>
                         </ul>
                     </nav>
