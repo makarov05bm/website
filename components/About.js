@@ -12,7 +12,7 @@ const About = () => {
           <h1>About us</h1>
           <hr className="line" />
           <p>Discover RetroMuse, the vibrant fusion of innovation and nostalgia in gaming, proudly from Algeria 🇩🇿<br></br><br></br>
-            We're iconic, passionate creators dedicated to redefining gaming excellence.<br></br><br></br><br></br>
+            We are iconic, passionate creators dedicated to redefining gaming excellence.<br></br><br></br><br></br>
 
             <b>Join our journey to unite a robust gaming community and shape the future of interactive entertainment !</b><br></br>
             RetroMuse – Boundless Creativity, Algerian Spirit.</p>

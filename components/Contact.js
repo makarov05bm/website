@@ -103,7 +103,7 @@ const Contact = () => {
                     <hr className="line" />
 
                     <p>Looking to collaborate?<br></br> Have suggestions? Or simply want to connect?<br></br><br></br>
-                        We're eager to hear from you!</p>
+                        We&apos;re eager to hear from you!</p>
 
                     <div className="forms">
                         <div className="form">

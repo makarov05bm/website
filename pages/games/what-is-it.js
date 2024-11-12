@@ -113,7 +113,7 @@ const WhatIsIt = () => {
                         </div>
 
                         <p>
-                            Welcome to "What is it?", the captivating trivia game that offers endless hours of entertainment!<br></br><br></br>ploration as you guess the hidden object behind the tiles across various Thematic Packs, Each offering different levels of immersive gameplay. Immerse yourself in the ambiance with custom soundtracks that perfectly match each pack, setting the mood for an unforgettable gaming experience.<br></br><br></br> But the fun doesn't stop there! With each level you complete, unlock +100 stunning Wallpapers to adorn your device!<br></br><br></br> Need some help ? No problem! Utilize our awesome hints to aid in your quest for the hidden object: <br></br><br></br>
+                            Welcome to -What is it?-, the captivating trivia game that offers endless hours of entertainment!<br></br><br></br>ploration as you guess the hidden object behind the tiles across various Thematic Packs, Each offering different levels of immersive gameplay. Immerse yourself in the ambiance with custom soundtracks that perfectly match each pack, setting the mood for an unforgettable gaming experience.<br></br><br></br> But the fun does not stop there! With each level you complete, unlock +100 stunning Wallpapers to adorn your device!<br></br><br></br> Need some help ? No problem! Utilize our awesome hints to aid in your quest for the hidden object: <br></br><br></br>
                             You can enjoy the game in your preferred language and even learn new ones and expand your vocabulary along the way! (English, Arabic, French, Spanish ...+5 more)
                         </p>
                     </div>

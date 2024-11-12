@@ -114,9 +114,9 @@ const CyberChaos = () => {
                         </div>
 
                         <p>
-                            Cyber Chaos is an intense Roguelite 2D action-platformer set in a dystopian cyberpunk world, where survival is your only objective. Step into the shoes of "Punk," a hardened survivor navigating the chaotic cyber maze. <br></br><br></br>
-                            Each level presents you with randomized rooms full of enemies, challenges, and epic bosses. Clear the room to proceed, or face death—but don't worry, in a world led by advanced technology, perishing is only temporary.<br></br><br></br>
-                            As you navigate through the game's intense levels, you’ll collect powerful weapons, game-changing perks, and other valuable collectables. The game offers various guns, all of which can be unlocked and upgraded to suit your playstyle. <br></br><br></br>Visit the in-game store with every run to shop for new items, sell old gear, and upgrade your stats to prepare for the next challenge, and take a breather in the intermediate lobby between levels to strategize your next move.<br></br><br></br>
+                            Cyber Chaos is an intense Roguelite 2D action-platformer set in a dystopian cyberpunk world, where survival is your only objective. Step into the shoes of &apos;&apos;Punk,&apos;&apos; a hardened survivor navigating the chaotic cyber maze. <br></br><br></br>
+                            Each level presents you with randomized rooms full of enemies, challenges, and epic bosses. Clear the room to proceed, or face death—but don&apos;t worry, in a world led by advanced technology, perishing is only temporary.<br></br><br></br>
+                            As you navigate through the game&apos;s intense levels, you’ll collect powerful weapons, game-changing perks, and other valuable collectables. The game offers various guns, all of which can be unlocked and upgraded to suit your playstyle. <br></br><br></br>Visit the in-game store with every run to shop for new items, sell old gear, and upgrade your stats to prepare for the next challenge, and take a breather in the intermediate lobby between levels to strategize your next move.<br></br><br></br>
                             Every run will be different, whether you conquer the cyber maze in one go or return again and again, chaos is always waiting.
                         </p>
                     </div>

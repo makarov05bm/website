@@ -88,7 +88,7 @@ const Services = () => {
                     <div className="content">
                         <h2>Digital Art</h2>
                         <p>Elevate your project with stunning digital art created by our talented artists. From intricate character designs to immersive environments and dynamic animations, our 2D art services are crafted to enhance the visual appeal and storytelling of your project.<br></br><br></br>
-                            We specialize in various art styles, ensuring that each element perfectly aligns with your game's aesthetic and narrative.</p>
+                            We specialize in various art styles, ensuring that each element perfectly aligns with your games aesthetic and narrative.</p>
                         <LocalLink smooth={true} to='contact' className='link'>Contact us</LocalLink>
                     </div>
                 </div>
