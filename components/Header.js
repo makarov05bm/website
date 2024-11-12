@@ -1,4 +1,4 @@
-import React, { useContext, useEffect, useRef } from 'react'
+import React, { useContext, useEffect, useRef, useState } from 'react'
 import Link from 'next/link'
 import { IoLogoOctocat } from 'react-icons/io'
 import ContactScreen from '../pages/contact'
@@ -6,6 +6,7 @@ import BlogContext from '../store/contactContext'
 import { Link as LocalLink, animateScroll as scroll } from "react-scroll";
 
 const Header = () => {
+    const [isOpen, setIsOpen] = useState(false)
     const blogContext = useContext(BlogContext)
 
     const contactRef = useRef(null)
@@ -51,7 +52,34 @@ const Header = () => {
                                 <span>RETRO MUSE STUDIOS</span>
                             </Link>
                         </h2>
-                        <ul>
+                        <h2 className='burger' onClick={() => setIsOpen(!isOpen)}>|||</h2>
+                        {isOpen && (
+                            <ul className="list">
+                                <li onClick={() => setIsOpen(false)}>
+                                    <Link href='/#about'>About</Link>
+                                </li>
+                                <li onClick={() => setIsOpen(false)}>
+                                    <div className="special">+ Special Offers</div>
+                                    <Link href='/services'>Services</Link>
+                                </li>
+                                <li onClick={() => setIsOpen(false)}>
+                                    <Link href='/#games'>Games</Link>
+                                </li>
+                                <li onClick={() => setIsOpen(false)}>
+                                    <Link href='/#blogs'>Blogs</Link>
+                                </li>
+                                {/* <li>
+                                <a href='https://sites.google.com/view/retromuse-privacy-policy/home' target="_blank">Privacy Policy</a>
+                            </li> */}
+                                <li onClick={() => setIsOpen(false)}>
+                                    <Link href='/#team'>Team</Link>
+                                </li>
+                                <li className='btn' onClick={() => setIsOpen(false)}>
+                                    <Link href='/#join'>JOIN US</Link>
+                                </li>
+                            </ul>
+                        )}
+                        <ul className='horizon'>
                             <li>
                                 <Link href='/#about'>About</Link>
                             </li>

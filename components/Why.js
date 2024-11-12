@@ -61,7 +61,7 @@ const Why = () => {
                             </div>
                         </div>
 
-                        <Link href='/' className='btn'>SEE MORE</Link>
+                        <Link href='/services' className='btn'>SEE MORE</Link>
                     </article>
 
                     <article>
@@ -89,6 +89,8 @@ const Why = () => {
                             </div>
                         </div>
 
+                        <Link href='/services' className='btn'>SEE MORE</Link>
+
                     </article>
 
                     <article>
@@ -115,6 +117,8 @@ const Why = () => {
                                 <img src="/images/datas.png" alt="" />
                             </div>
                         </div>
+
+                        <Link href='/services' className='btn'>SEE MORE</Link>
 
                     </article>
 
@@ -148,6 +152,8 @@ const Why = () => {
                                 <img src="/images/arts.png" alt="" />
                             </div>
                         </div>
+
+                        <Link href='/services' className='btn'>SEE MORE</Link>
 
                     </article>
                 </div>

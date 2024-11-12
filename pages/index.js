@@ -17,17 +17,15 @@ export default function HomeScreen({ posts }) {
   return (
     <>
       <Meta title="Retro Muse" description='Where Art and Retro meet Playfully' />
-      {isMobile ? <Soon /> : (
-        <><Hero />
-          <About />
-          <Why />
-          <GameList />
-          <Games />
-          <Featured posts={posts} />
-          <Team />
-          <Contact />
-          <Footer /></>
-      )}
+      <><Hero />
+        <About />
+        <Why />
+        <GameList />
+        <Games />
+        <Featured posts={posts} />
+        <Team />
+        <Contact />
+        <Footer /></>
       {/* <Socials /> */}
     </>
   )

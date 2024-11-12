@@ -45,24 +45,25 @@ const Games = () => {
             <div className="main">
                 <div className="right-fade"></div>
                 <div className="left-fade"></div>
-                <div className="left"><div className="inner-left">
-                    <div className="card">
-                        <iframe
-                            src="https://www.youtube.com/embed/Ng4Txcv2G6o">
-                        </iframe>
+                <div className="left">
+                    <div className="inner-left">
+                        <div className="card">
+                            <iframe
+                                src="https://www.youtube.com/embed/Ng4Txcv2G6o">
+                            </iframe>
 
-                        <div className="content">
-                            <h2>What is it?</h2>
-                            <h3>Guess the Picture</h3>
-                            <hr className="line" />
-                            <p>Guess hidden objects. Unlock +100 wallpapers. Chill and Expand your vocabulary!</p>
+                            <div className="content">
+                                <h2>What is it?</h2>
+                                <h3>Guess the Picture</h3>
+                                <hr className="line" />
+                                <p>Guess hidden objects. Unlock +100 wallpapers. Chill and Expand your vocabulary!</p>
 
-                            <b>Genre:</b><p>Puzzle, Trivia, Offline</p>
+                                <b>Genre:</b><p>Puzzle, Trivia, Offline</p>
+                            </div>
                         </div>
-                    </div>
 
-                    <div className="right-arr"></div>
-                </div></div>
+                        <div className="right-arr"></div>
+                    </div></div>
 
                 <div className="middle">
                     <div className="inner-middle">

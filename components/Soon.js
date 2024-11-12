@@ -6,7 +6,7 @@ const ComingSoon = () => {
         <section className='soon'>
             <div className="main">
                 <h1>Coming Soon</h1>
-                <p>We're working on a great mobile experience. Stay tuned!</p>
+                <p>We are working on a great mobile experience. Stay tuned!</p>
             </div>
 
             <IoIosConstruct className='icon' />

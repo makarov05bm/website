@@ -28,7 +28,7 @@ const Services = () => {
                     <div className="content">
                         <h2>Game Development</h2>
                         <p>Bring your game ideas to life with our top-tier game development services.<br></br><br></br>
-                            We specialize in concept design, programming, 2D/3D art and testing across various platforms. Leverage our expertise in game mechanics, storytelling, and interactive design to bring your vision to reality.<br></br><br></br>
+                            We specialize in concept design, programming, 2D/3D art <br /> and testing across various platforms. Leverage our expertise in game mechanics, storytelling, and interactive design to bring your vision to reality.<br></br><br></br>
                             Partner with us for a complete development cycle from ideation to launch and post-release support.</p>
                         <LocalLink smooth={true} to='contact' className='link'>Contact us</LocalLink>
                     </div>
@@ -100,8 +100,8 @@ const Services = () => {
 
                     <div className="content">
                         <h2>Web Development</h2>
-                        <p>Our Full Stack Web Development service delivers end-to-end solutions for dynamic web applications.<br></br><br></br>
-                            We excel in front-end and back-end development, responsive design, database management, and API integration. Ensure seamless user experiences and efficient server-side functionality with our expertise. Partner with us to bring your web project to life and receive comprehensive maintenance support.</p>
+                        <p>Our Full Stack Web Development service delivers <br /> end-to-end solutions for dynamic web applications.<br></br><br></br>
+                            We excel in front-end and back-end development, <br /> responsive design, database management, and API integration. Ensure seamless user experiences and efficient server-side functionality with our expertise. Partner with us to bring your web project to life and receive comprehensive maintenance support.</p>
                         <LocalLink smooth={true} to='contact' className='link'>Contact us</LocalLink>
                     </div>
 
