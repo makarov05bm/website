@@ -96,7 +96,7 @@ const WhatIsIt = () => {
                 </div>
 
                 <div className="play">
-                    <h2>Play Now!</h2>
+                    <h2>Play Now!!</h2>
 
                     <div className="flex">
                         <Link href='https://play.google.com/store/apps/details?id=com.retromuse.whatisit'><img src="/images/google.png" alt="" /></Link>
