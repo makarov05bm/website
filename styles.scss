@@ -1082,6 +1082,16 @@ a {
 
             .main-con {
 
+                .old {
+                    .controller {
+                        right: -16% !important;
+                    }
+
+                    .pcm {
+                        left: -24% !important;
+                    }
+                }
+
                 .link {
                     font-size: 1.2rem !important;
                     width: 86% !important;
@@ -4231,6 +4241,7 @@ a {
             border: 5px solid #ffffff;
             height: 100px;
             overflow: hidden;
+            // cursor: pointer;
 
 
             &.active {
@@ -4549,6 +4560,20 @@ a {
     }
 }
 
+@keyframes upDown {
+    0% {
+        transform: translateY(0) rotate(20deg);
+    }
+
+    50% {
+        transform: translateY(-20px) rotate(20deg);
+    }
+
+    100% {
+        transform: translateY(0) rotate(20deg);
+    }
+}
+
 .hero-con {
     display: flex;
     width: 100%;
@@ -4563,6 +4588,7 @@ a {
     background-size: 90%;
     background-position: center;
     background-repeat: no-repeat;
+    height: 70vh;
 
     .arrow {
         height: 30px;
@@ -4688,6 +4714,60 @@ a {
             flex-direction: column;
             justify-content: center;
             text-align: center;
+
+            .old {
+                display: grid !important;
+                align-items: center !important;
+                text-align: center !important;
+                position: relative;
+
+                .controller {
+                    position: absolute;
+                    top: 0;
+                    right: -3%;
+                    font-size: 6rem;
+                    opacity: 0.1;
+                    transform: rotate(20deg);
+                    animation: upDown 2s ease-in-out infinite;
+                    animation-delay: 1s;
+                }
+
+                .pcm {
+                    position: absolute;
+                    bottom: 30%;
+                    left: -5%;
+                    font-size: 6rem;
+                    opacity: 0.1;
+                    animation: upDown 2s ease-in-out infinite;
+                }
+
+                h2 {
+                    font-size: 2rem;
+                    text-align: center;
+                    line-height: 2.8rem;
+                    margin-top: 0.7rem;
+
+                    .yellow {
+                        color: #F2A922;
+                    }
+
+                    .blue {
+                        color: #1DB6F2;
+                    }
+
+                    .pink {
+                        color: #F23DC2;
+                    }
+                }
+
+                img {
+                    width: 220px;
+                    height: 220px;
+                    display: block;
+                    position: relative;
+                    z-index: 1000;
+                }
+            }
         }
 
         // &::before {

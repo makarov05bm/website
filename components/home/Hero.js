@@ -1,15 +1,15 @@
 import React, { useEffect, useState } from 'react'
 import Image from 'next/image'
 import { IoGameController } from "react-icons/io5";
-import { RiGameLine } from "react-icons/ri";
+import { RiGameFill } from "react-icons/ri";
 import { Swiper, SwiperSlide } from 'swiper/react';
 import { Navigation, Pagination, EffectCoverflow, Autoplay } from 'swiper/modules';
 import SwiperCore from 'swiper'
 import 'swiper/css';
 import 'swiper/css/navigation';
 import 'swiper/css/pagination';
-import { Link } from 'react-scroll';
 import { IoChevronForward } from "react-icons/io5";
+import Link from 'next/link';
 
 SwiperCore.use([EffectCoverflow]);
 
@@ -19,11 +19,11 @@ const Hero = () => {
     'Where Art and Retro meet Playfully'
   ]
 
-  const [curr, setCurr] = useState(1)
+  const [curr, setCurr] = useState(0)
   const [backgroundImage, setBackgroundImage] = useState('/images/new-hero.png'); // Default background image
   const [text, setText] = useState(titles[0])
 
-  const backgrounds = ['/images/new-hero.png', '/images/hero.png'];
+  const backgrounds = ['/images/new-hero.png', '/images/bgg.png'];
 
   // Function to change background image
   const changeBackground = () => {
@@ -31,6 +31,12 @@ const Hero = () => {
     const nextIndex = (currentIndex + 1) % backgrounds.length;
     setBackgroundImage(backgrounds[nextIndex]);
     setText(titles[(titles.indexOf(text) + 1) % titles.length])
+
+    if (curr === 0) {
+      setCurr(1)
+    } else {
+      setCurr(0)
+    }
   };
 
   return (
@@ -58,13 +64,27 @@ const Hero = () => {
 
       <div className="content">
         <div className="main-con">
-          <h3>HI, WE ARE RETROMUSE</h3>
-          <h1 style={text === "Where Art and Retro meet Playfully" ? { fontSize: '3.1rem' } : { fontSize: '3.8rem' }}>{text}</h1>
-          <p>Continuously bringing digital creations to life that exceed expectations. <br></br> With each piece telling a story.</p>
-          {/* <h1>Where <span className="yel">Art</span> and <span className="blue">Retro</span> meet <br></br> <span className="pink">Playfully</span></h1> */}
-          <Link href='/services' className='link'>Explore Our Services</Link>
+          {curr === 0 ? (
+            <><h3>HI, WE ARE RETROMUSE</h3>
+              <h1 style={text === "Where Art and Retro meet Playfully" ? { fontSize: '3.1rem' } : { fontSize: '3.8rem' }}>{text}</h1>
+              <p>Continuously bringing digital creations to life that exceed expectations. <br></br> With each piece telling a story.</p>
+              {/* <h1>Where <span className="yel">Art</span> and <span className="blue">Retro</span> meet <br></br> <span className="pink">Playfully</span></h1> */}
+              <Link href='/services' className='link'>Explore Our Services</Link>
+              <img src="/images/header.png" alt="" /></>
+          ) : (
+            <article className='old'>
+              <img src="/images/header.png" className='imgg' alt="" />
+              <h2 className='colors'>Where <span className='yellow'>Art</span> and <span className="blue">Retro</span> meet <span className="pink">Playfully</span></h2>
+              <Link href='/#games' className='link'>Discover Our Games</Link>
+              <span className='controller'>
+                <IoGameController />
+              </span>
+              <span className='pcm'>
+                <RiGameFill />
+              </span>
+            </article>
+          )}
 
-          <img src="/images/header.png" alt="" />
           <button className='arrow' onClick={changeBackground}>
             <IoChevronForward className='icon' />
           </button>

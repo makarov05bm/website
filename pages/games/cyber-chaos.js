@@ -21,7 +21,7 @@ const CyberChaos = () => {
         '8.PNG',
     ]
 
-    let [currImage, setCurrImage] = useState(0)
+    const [currImage, setCurrImage] = useState(0)
 
     return (
         <>
@@ -70,28 +70,28 @@ const CyberChaos = () => {
                     </div>
 
                     <div className="gallery-items">
-                        <div className={`item ${currImage === 0 && 'active'}`}>
+                        <div className={`item ${currImage === 0 && 'active'}`} onClick={() => setCurrImage(0)}>
                             <img src="/images/1.PNG" alt="" />
                         </div>
-                        <div className={`item ${currImage === 1 && 'active'}`}>
+                        <div className={`item ${currImage === 1 && 'active'}`} onClick={() => setCurrImage(1)}>
                             <img src="/images/2.PNG" alt="" />
                         </div>
-                        <div className={`item ${currImage === 2 && 'active'}`}>
+                        <div className={`item ${currImage === 2 && 'active'}`} onClick={() => setCurrImage(2)}>
                             <img src="/images/3.PNG" alt="" />
                         </div>
-                        <div className={`item ${currImage === 3 && 'active'}`}>
+                        <div className={`item ${currImage === 3 && 'active'}`} onClick={() => setCurrImage(3)}>
                             <img src="/images/4.PNG" alt="" />
                         </div>
-                        <div className={`item ${currImage === 4 && 'active'}`}>
+                        <div className={`item ${currImage === 4 && 'active'}`} onClick={() => setCurrImage(4)}>
                             <img src="/images/5.PNG" alt="" />
                         </div>
-                        <div className={`item ${currImage === 5 && 'active'}`}>
+                        <div className={`item ${currImage === 5 && 'active'}`} onClick={() => setCurrImage(5)}>
                             <img src="/images/6.PNG" alt="" />
                         </div>
-                        <div className={`item ${currImage === 6 && 'active'}`}>
+                        <div className={`item ${currImage === 6 && 'active'}`} onClick={() => setCurrImage(6)}>
                             <img src="/images/7.PNG" alt="" />
                         </div>
-                        <div className={`item ${currImage === 7 && 'active'}`}>
+                        <div className={`item ${currImage === 7 && 'active'}`} onClick={() => setCurrImage()}>
                             <img src="/images/8.PNG" alt="" />
                         </div>
                     </div>
