@@ -4241,7 +4241,7 @@ a {
             border: 5px solid #ffffff;
             height: 100px;
             overflow: hidden;
-            // cursor: pointer;
+            cursor: pointer;
 
 
             &.active {
@@ -4588,7 +4588,7 @@ a {
     background-size: 90%;
     background-position: center;
     background-repeat: no-repeat;
-    height: 70vh;
+    height: 80vh;
 
     .arrow {
         height: 30px;
@@ -5352,13 +5352,15 @@ a {
                     padding: 1.6rem;
                     gap: 1.8rem;
 
-                    iframe {
+                    img {
                         width: 100%;
                         display: block;
                         height: 460px;
                         border-radius: 12px;
                         border: none;
                         outline: none;
+                        object-fit: cover;
+                        object-position: 80% 100%;
                     }
 
                     .content {
@@ -5434,6 +5436,17 @@ a {
                     background-color: #000;
                     border-radius: 22px;
                     padding: 1.6rem;
+
+                    img {
+                        width: 100%;
+                        display: block;
+                        height: 460px;
+                        border-radius: 12px;
+                        border: none;
+                        outline: none;
+                        object-fit: cover;
+                        object-position: 80% 100%;
+                    }
 
                     iframe {
                         width: 100%;

@@ -12,7 +12,7 @@ const Games = () => {
             genre: 'Puzzle, Trivia, Offline',
             platforms: 'Android, WebGL',
             release_data: 'Coming soon',
-            video: 'https://www.youtube.com/embed/wN6bHZu0rvo',
+            video: 'https://player.vimeo.com/video/1030148803',
             ps_link: 'https://play.google.com/store/apps/details?id=com.retromuse.whatisit',
             crazy_link: 'https://www.crazygames.com/game/what-is-it',
             game_link: 'what-is-it'
@@ -23,7 +23,7 @@ const Games = () => {
             desc: ' play as a pew pew punk soldier and clear rooms to progress to more difficult stages. ',
             genre: 'Action, Combat, Offline',
             platforms: 'PC (Steam)',
-            video: 'https://www.youtube.com/embed/SCuMkkl_AMU',
+            video: 'https://player.vimeo.com/video/1030168867',
             release_data: 'Coming soon',
             game_link: 'cyber-chaos',
             steam_link: 'https://store.steampowered.com/app/2859520/Cyber_Chaos/'
@@ -48,9 +48,9 @@ const Games = () => {
                 <div className="left">
                     <div className="inner-left">
                         <div className="card">
-                            <iframe
-                                src="https://www.youtube.com/embed/Ng4Txcv2G6o">
-                            </iframe>
+                            <img
+                                src="https://i.vimeocdn.com/video/1950649354-88e53f670e7e8a03816fcbbcc3cff759855fb07b475771e6ca52d7d2ef19fabe-d_2400" >
+                            </img>
 
                             <div className="content">
                                 <h2>What is it?</h2>
@@ -83,20 +83,20 @@ const Games = () => {
                             </iframe>
 
                             <div className="content">
-                                <h2>{currGame.title}</h2>
-                                <h3>{currGame.short}</h3>
+                                <h2>{games[cmp].title}</h2>
+                                <h3>{games[cmp].short}</h3>
                                 <hr className="line" />
-                                <p>{currGame.desc}</p>
+                                <p>{games[cmp].desc}</p>
 
-                                <b>Genre:</b><p>{currGame.genre}</p>
-                                <b>Platforms:</b><p>{currGame.platforms} {currGame.crazy_link && currGame.ps_link ? (
-                                    <><Link href={currGame.ps_link}><img src="/images/ps.png" /></Link><Link href={currGame.crazy_link}><img src="/images/ziggy.png" /></Link></>
+                                <b>Genre:</b><p>{games[cmp].genre}</p>
+                                <b>Platforms:</b><p>{games[cmp].platforms} {games[cmp].crazy_link && games[cmp].ps_link ? (
+                                    <><Link href={games[cmp].ps_link}><img src="/images/ps.png" /></Link><Link href={games[cmp].crazy_link}><img src="/images/ziggy.png" /></Link></>
                                 ) : (
-                                    <><Link href={currGame.steam_link}><img src="/images/steamm.png" /></Link></>
+                                    <><Link href={games[cmp].steam_link}><img src="/images/steamm.png" /></Link></>
                                 )}</p>
-                                <b>Release Date:</b><p>{currGame.release_data}</p>
+                                <b>Release Date:</b><p>{games[cmp].release_data}</p>
 
-                                <Link href={`/games/${currGame.game_link}`} className="btn-yel">See More</Link>
+                                <Link href={`/games/${games[cmp].game_link}`} className="btn-yel">See More</Link>
                             </div>
                         </div>
 
@@ -114,9 +114,9 @@ const Games = () => {
 
                 <div className="right"><div className="inner-right">
                     <div className="card">
-                        <iframe
-                            src="https://www.youtube.com/embed/Ng4Txcv2G6o">
-                        </iframe>
+                        <img
+                            src="/images/1.PNG">
+                        </img>
                     </div>
                 </div></div>
             </div>

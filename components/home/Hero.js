@@ -43,6 +43,7 @@ const Hero = () => {
     <section className='hero-con' id='home' style={{
       backgroundImage: `url(${backgroundImage})`,
       transition: 'background-image 1s ease-in-out',
+      backgroundSize: 'contain'
     }}>
       <div className="left-fade"></div>
       <div className="right-fade"></div>

@@ -11,6 +11,7 @@ import Footer from '../../components/Footer';
 const CyberChaos = () => {
     // first item is the video pic
     let imageList = [
+        '4343.avif',
         '1.PNG',
         '2.PNG',
         '3.PNG',
@@ -51,7 +52,7 @@ const CyberChaos = () => {
                         <div className="middle">
                             {currImage === 0 ? (
                                 <iframe
-                                    src="https://www.youtube.com/embed/Ng4Txcv2G6o">
+                                    src="https://player.vimeo.com/video/1030168867">
                                 </iframe>
                             ) : (
                                 <img src={`/images/${imageList[currImage]}`} alt="gallery pic" />
@@ -71,27 +72,30 @@ const CyberChaos = () => {
 
                     <div className="gallery-items">
                         <div className={`item ${currImage === 0 && 'active'}`} onClick={() => setCurrImage(0)}>
-                            <img src="/images/1.PNG" alt="" />
+                            <img src="/images/4343.avif" alt="" />
                         </div>
                         <div className={`item ${currImage === 1 && 'active'}`} onClick={() => setCurrImage(1)}>
-                            <img src="/images/2.PNG" alt="" />
+                            <img src="/images/1.PNG" alt="" />
                         </div>
                         <div className={`item ${currImage === 2 && 'active'}`} onClick={() => setCurrImage(2)}>
-                            <img src="/images/3.PNG" alt="" />
+                            <img src="/images/2.PNG" alt="" />
                         </div>
                         <div className={`item ${currImage === 3 && 'active'}`} onClick={() => setCurrImage(3)}>
-                            <img src="/images/4.PNG" alt="" />
+                            <img src="/images/3.PNG" alt="" />
                         </div>
                         <div className={`item ${currImage === 4 && 'active'}`} onClick={() => setCurrImage(4)}>
-                            <img src="/images/5.PNG" alt="" />
+                            <img src="/images/4.PNG" alt="" />
                         </div>
                         <div className={`item ${currImage === 5 && 'active'}`} onClick={() => setCurrImage(5)}>
-                            <img src="/images/6.PNG" alt="" />
+                            <img src="/images/5.PNG" alt="" />
                         </div>
                         <div className={`item ${currImage === 6 && 'active'}`} onClick={() => setCurrImage(6)}>
+                            <img src="/images/6.PNG" alt="" />
+                        </div>
+                        <div className={`item ${currImage === 7 && 'active'}`} onClick={() => setCurrImage(7)}>
                             <img src="/images/7.PNG" alt="" />
                         </div>
-                        <div className={`item ${currImage === 7 && 'active'}`} onClick={() => setCurrImage()}>
+                        <div className={`item ${currImage === 8 && 'active'}`} onClick={() => setCurrImage(8)}>
                             <img src="/images/8.PNG" alt="" />
                         </div>
                     </div>

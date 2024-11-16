@@ -11,6 +11,7 @@ import Footer from '../../components/Footer';
 const WhatIsIt = () => {
     // first item is the video pic
     let imageList = [
+        '888.png',
         '111.png',
         '222.png',
         '333.png',
@@ -18,7 +19,6 @@ const WhatIsIt = () => {
         '555.png',
         '666.png',
         '777.png',
-        '888.png',
     ]
 
     let [currImage, setCurrImage] = useState(0)
@@ -50,7 +50,7 @@ const WhatIsIt = () => {
                     <div className="middle">
                         {currImage === 0 ? (
                             <iframe
-                                src="https://www.youtube.com/embed/Ng4Txcv2G6o">
+                                src="https://player.vimeo.com/video/1030148803">
                             </iframe>
                         ) : (
                             <img src={`/images/${imageList[currImage]}`} alt="gallery pic" />
@@ -69,29 +69,29 @@ const WhatIsIt = () => {
                 </div>
 
                 <div className="gallery-items">
-                    <div className={`item ${currImage === 0 && 'active'}`}>
+                    <div className={`item ${currImage === 0 && 'active'}`} onClick={() => setCurrImage(0)}>
+                        <img src="/images/888.png" alt="" />
+                    </div>
+                    <div className={`item ${currImage === 1 && 'active'}`} onClick={() => setCurrImage(1)}>
                         <img src="/images/111.png" alt="" />
                     </div>
-                    <div className={`item ${currImage === 1 && 'active'}`}>
+                    <div className={`item ${currImage === 2 && 'active'}`} onClick={() => setCurrImage(2)}>
                         <img src="/images/222.png" alt="" />
                     </div>
-                    <div className={`item ${currImage === 2 && 'active'}`}>
+                    <div className={`item ${currImage === 3 && 'active'}`} onClick={() => setCurrImage(3)}>
                         <img src="/images/333.png" alt="" />
                     </div>
-                    <div className={`item ${currImage === 3 && 'active'}`}>
+                    <div className={`item ${currImage === 4 && 'active'}`} onClick={() => setCurrImage(4)}>
                         <img src="/images/444.png" alt="" />
                     </div>
-                    <div className={`item ${currImage === 4 && 'active'}`}>
+                    <div className={`item ${currImage === 5 && 'active'}`} onClick={() => setCurrImage(5)}>
                         <img src="/images/555.png" alt="" />
                     </div>
-                    <div className={`item ${currImage === 5 && 'active'}`}>
+                    <div className={`item ${currImage === 6 && 'active'}`} onClick={() => setCurrImage(6)}>
                         <img src="/images/666.png" alt="" />
                     </div>
-                    <div className={`item ${currImage === 6 && 'active'}`}>
+                    <div className={`item ${currImage === 7 && 'active'}`} onClick={() => setCurrImage(7)}>
                         <img src="/images/777.png" alt="" />
-                    </div>
-                    <div className={`item ${currImage === 7 && 'active'}`}>
-                        <img src="/images/888.png" alt="" />
                     </div>
                 </div>
 
