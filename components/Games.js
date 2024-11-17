@@ -79,7 +79,7 @@ const Games = () => {
 
                         <div className="card">
                             <iframe
-                                src={currGame.video}>
+                                src={games[cmp].video}>
                             </iframe>
 
                             <div className="content">
