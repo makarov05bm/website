@@ -32,7 +32,7 @@ const Why = () => {
 
             <div className="container">
                 <div className="main-content">
-                    <article>
+                    <article className='spe'>
                         <div className="stick">
                             <CgGames />
                         </div>
@@ -64,7 +64,7 @@ const Why = () => {
                         <Link href='/services' className='btn'>SEE MORE</Link>
                     </article>
 
-                    <article>
+                    <article className='spe'>
                         <div className="web">
                             <IoMdBrowsers />
                         </div>
@@ -93,7 +93,7 @@ const Why = () => {
 
                     </article>
 
-                    <article>
+                    <article className='spe'>
                         <div className="stat">
                             <FiBarChart2 />
                         </div>
@@ -122,7 +122,7 @@ const Why = () => {
 
                     </article>
 
-                    <article>
+                    <article className='spe'>
                         <div className="brush">
                             <FaPaintBrush />
                         </div>

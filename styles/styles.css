@@ -47,6 +47,10 @@ html {
     opacity: 1;
   }
 }
+textarea {
+  resize: none;
+}
+
 textarea:focus,
 input:focus {
   outline: none;
@@ -1363,6 +1367,7 @@ a {
 .why .container {
   width: 90%;
   margin: 0 auto;
+  align-items: flex-end;
 }
 .why .container .main-content {
   display: grid;
@@ -1371,7 +1376,7 @@ a {
   row-gap: 3rem;
   -moz-column-gap: 3.6rem;
        column-gap: 3.6rem;
-  align-items: flex-end;
+  padding: 2rem 0;
 }
 .why .container .main-content article {
   padding: 1rem;
@@ -1379,20 +1384,27 @@ a {
   border-radius: 28px;
   height: -moz-fit-content;
   height: fit-content;
-  transition: transform 0.1s ease-out;
+  transition: all 0.1s ease-out;
 }
-.why .container .main-content article:hover {
+.why .container .main-content article.spe {
+  height: 200px;
+}
+.why .container .main-content article.spe .btn {
+  opacity: 0;
+}
+.why .container .main-content article.spe:hover {
   transform: scale(1.1);
+  height: 240px;
 }
-.why .container .main-content article:hover .btn {
-  display: block;
+.why .container .main-content article.spe:hover .btn {
+  opacity: 1;
 }
 .why .container .main-content article .btn {
-  display: none;
+  display: block;
   width: -moz-fit-content;
   width: fit-content;
   margin: 0 auto;
-  margin-top: 1rem;
+  margin-top: 0rem;
   background-color: #1DB6F2;
   color: #000;
   border: 1px solid #fff;
@@ -3149,7 +3161,7 @@ a {
           clip-path: polygon(0 0, 100% 0%, 93.4% 100%, 0% 100%);
   border-top-left-radius: 8px;
   border-bottom-left-radius: 8px;
-  background-image: url("../public/images/wp6181378-jet-fighter-pc-desktop-wallpapers.jpg");
+  background-image: url("../public/images/11111.png");
   background-size: cover;
   display: flex;
   justify-content: center;
@@ -3697,10 +3709,10 @@ a {
   overflow: hidden;
   position: relative;
   background-image: url("../public/images/new-hero.png");
+  background-size: 100% 100%;
   font-family: "Bebas Neue", sans-serif;
   color: #fff !important;
   transition: background-image 1s ease-in-out;
-  background-size: 100%;
   background-repeat: no-repeat;
   height: 80vh;
 }
@@ -4036,7 +4048,9 @@ a {
 }
 .blogs .container .blogs-grid {
   display: grid;
-  grid-template-columns: repeat(3, 1fr);
+  grid-template-columns: repeat(auto-fit, 33.33%);
+  justify-content: center;
+  justify-items: center;
   gap: 2rem;
 }
 .blogs .container .blogs-grid h2 {
@@ -4051,6 +4065,10 @@ a {
 .blogs .container .blogs-grid a {
   display: block;
   margin-bottom: 1.2rem;
+  transition: transform 0.1s ease-in;
+}
+.blogs .container .blogs-grid a:hover {
+  transform: scale(1.06);
 }
 .blogs .container .blogs-grid .item {
   border: 2px solid #F23DC2;
@@ -4222,6 +4240,7 @@ a {
   background-color: #F2A922;
   padding: 1.4rem 1.2rem;
   border-radius: 8px;
+  border: 3px solid #000;
 }
 .join h3 {
   color: #000;

@@ -20,10 +20,10 @@ const Hero = () => {
   ]
 
   const [curr, setCurr] = useState(0)
-  const [backgroundImage, setBackgroundImage] = useState('/images/new-hero.png'); // Default background image
+  const [backgroundImage, setBackgroundImage] = useState('/images/bgg.png'); // Default background image
   const [text, setText] = useState(titles[0])
 
-  const backgrounds = ['/images/new-hero.png', '/images/bgg.png'];
+  const backgrounds = ['/images/bgg.png', '/images/new-hero.png'];
 
   // Function to change background image
   const changeBackground = () => {
@@ -65,7 +65,7 @@ const Hero = () => {
 
       <div className="content">
         <div className="main-con">
-          {curr === 0 ? (
+          {curr === 1 ? (
             <><h3>HI, WE ARE RETROMUSE</h3>
               <h1 style={text === "Where Art and Retro meet Playfully" ? { fontSize: '3.1rem' } : { fontSize: '3.8rem' }}>{text}</h1>
               <p>Continuously bringing digital creations to life that exceed expectations. <br></br> With each piece telling a story.</p>

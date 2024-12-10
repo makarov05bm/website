@@ -28,34 +28,6 @@ const Featured = ({ posts }) => {
               </div>
             </div>
           </Link>
-          <Link href='/posts/next-game-project'>
-            <div className="item">
-              <header>
-                <img src="/images/blog1.png" alt="" />
-                <div className="date">MAR 26, 2024</div>
-              </header>
-
-              <div className="content-in">
-                <h3>Discover Our Latest Game</h3>
-
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam...</p>
-              </div>
-            </div>
-          </Link>
-          <Link href='/posts/next-game-project'>
-            <div className="item">
-              <header>
-                <img src="/images/blog1.png" alt="" />
-                <div className="date">MAR 26, 2024</div>
-              </header>
-
-              <div className="content-in">
-                <h3>Discover Our Latest Game</h3>
-
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam...</p>
-              </div>
-            </div>
-          </Link>
         </div>
       </div>
     </section>

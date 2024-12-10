@@ -55,6 +55,10 @@ html {
     }
 }
 
+textarea {
+    resize: none;
+}
+
 textarea:focus,
 input:focus {
     outline: none;
@@ -1708,6 +1712,7 @@ a {
     .container {
         width: 90%;
         margin: 0 auto;
+        align-items: flex-end;
 
         .main-content {
             display: grid;
@@ -1715,29 +1720,38 @@ a {
             margin-top: 2.6rem;
             row-gap: 3rem;
             column-gap: 3.6rem;
-            align-items: flex-end;
+            padding: 2rem 0;
 
             article {
                 padding: 1rem;
                 position: relative;
                 border-radius: 28px;
                 height: fit-content;
-                transition: transform 0.1s ease-out;
+                transition: all 0.1s ease-out;
 
-
-                &:hover {
-                    transform: scale(1.1);
+                &.spe {
+                    height: 200px;
 
                     .btn {
-                        display: block;
+                        opacity: 0;
+                    }
+
+
+                    &:hover {
+                        transform: scale(1.1);
+                        height: 240px;
+
+                        .btn {
+                            opacity: 1;
+                        }
                     }
                 }
 
                 .btn {
-                    display: none;
+                    display: block;
                     width: fit-content;
                     margin: 0 auto;
-                    margin-top: 1rem;
+                    margin-top: 0rem;
                     background-color: #1DB6F2;
                     color: #000;
                     border: 1px solid #fff;
@@ -3942,7 +3956,7 @@ a {
                 clip-path: polygon(0 0, 100% 0%, 93.4% 100%, 0% 100%);
                 border-top-left-radius: 8px;
                 border-bottom-left-radius: 8px;
-                background-image: url("../public/images/wp6181378-jet-fighter-pc-desktop-wallpapers.jpg");
+                background-image: url("../public/images/11111.png");
                 background-size: cover;
                 display: flex;
                 justify-content: center;
@@ -4582,10 +4596,10 @@ a {
     overflow: hidden;
     position: relative;
     background-image: url("../public/images/new-hero.png");
+    background-size: 100% 100%;
     font-family: 'Bebas Neue', sans-serif;
     color: #fff !important;
     transition: background-image 1s ease-in-out;
-    background-size: 100%;
     background-repeat: no-repeat;
     height: 80vh;
 
@@ -4985,7 +4999,9 @@ a {
 
         .blogs-grid {
             display: grid;
-            grid-template-columns: repeat(3, 1fr);
+            grid-template-columns: repeat(auto-fit, 33.33%);
+            justify-content: center;
+            justify-items: center;
             gap: 2rem;
 
             h2 {
@@ -5001,6 +5017,11 @@ a {
             a {
                 display: block;
                 margin-bottom: 1.2rem;
+                transition: transform 0.1s ease-in;
+
+                &:hover {
+                    transform: scale(1.06);
+                }
             }
 
 
@@ -5204,6 +5225,7 @@ a {
     background-color: #F2A922;
     padding: 1.4rem 1.2rem;
     border-radius: 8px;
+    border: 3px solid #000;
 
     h3 {
         color: #000;
