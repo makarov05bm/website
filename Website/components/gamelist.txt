@@ -1,0 +1,61 @@
+<div className="games-icon">
+                    <SiGamejolt className='icon' />
+                </div>
+                <div className="game">
+                    <div className="swiper">
+                        <Swiper pagination={{
+                            type: 'progressbar',
+                        }} autoplay={{
+                            delay: 2500,
+                            disableOnInteraction: false
+                        }}
+                            spaceBetween={20}
+                            modules={[Pagination, Navigation, Autoplay]}
+                            className="mySwiper">
+                            <SwiperSlide><img src="/images/wii8.png" alt="" /></SwiperSlide>
+                            <SwiperSlide><img src="/images/wii5.png" alt="" /></SwiperSlide>
+                            <SwiperSlide><img src="/images/wii7.png" alt="" /></SwiperSlide>
+                            <SwiperSlide><img src="/images/wii1.png" alt="" /></SwiperSlide>
+                            <SwiperSlide><img src="/images/wii2.png" alt="" /></SwiperSlide>
+                            <SwiperSlide><img src="/images/wii3.png" alt="" /></SwiperSlide>
+                            <SwiperSlide><img src="/images/wii4.png" alt="" /></SwiperSlide>
+                            <SwiperSlide><img src="/images/wii6.png" alt="" /></SwiperSlide>
+                        </Swiper>
+
+                    </div>
+                    <div className="content">
+                        {/* <div className="game-icon">
+                            <img src="/images/wii-icon.png" alt="" />
+                        </div> */}
+                        <h2>What Is It?</h2>
+                        <p>Guess hidden objects. Unlock +100 wallpapers. Chill and Expand your vocabulary!</p>
+                        <ul>
+                            <li>
+                                <b>Release Data:</b>
+                                <p>Coming soon</p>
+                            </li>
+                            <li>
+                                <b>Platform:</b>
+                                <p>Android</p>
+                            </li>
+                            <li>
+                                <b>In-App Purchaches:</b>
+                                <p>Yes</p>
+                            </li>
+                            <li>
+                                <b>Game Category:</b>
+                                <p>Puzzles</p>
+                            </li>
+                            <li>
+                                <b>Status:</b>
+                                <p>Not Released</p>
+                            </li>
+                            <li>
+                                <b>Size:</b>
+                                <p>70MB</p>
+                            </li>
+                        </ul>
+                        <Link href='https://play.google.com/store/apps/details?id=com.retromuse.whatisit'><IoLogoGooglePlaystore className='icon' /> See on Play Store</Link>
+                        <a href="https://sites.google.com/view/retromuse-privacy-policy/home" className='pp'>Privacy Policy</a>
+                    </div>
+                </div>

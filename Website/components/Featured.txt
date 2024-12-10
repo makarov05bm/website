@@ -1,0 +1,7 @@
+<PostGrid>
+          {posts.slice(0, 4).map((post, index) => {
+            return (
+              <PostItem key={index} title={post.title} image={`/images/${post.slug}/${post.image}`} date={post.date} description={post.description} slug={post.slug} />
+            )
+          })}
+        </PostGrid>
